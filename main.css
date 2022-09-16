@@ -1,4 +1,62 @@
-:root{
-    --primary-black:#000000;
-    --dark-green:#00695c;
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap');
+
+:root {
+    --primary-black: #000000;
+    --dark-green: #00695c;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:'Signika Negative', sans-serif;
+    color: var(--dark-green);
+    background-color: var(--primary-black);
+}
+ .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    max-height: 100vh;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+    margin: 2rem;
+}  
+
+#heading{
+    text-align: center;
+}
+#date-of-birth{
+    display: block;
+    text-align: center;
+}
+#lucky-number{
+    display: block;
+    
+}
+label{
+    text-align: center;
+    margin: 0.5rem;
+    font-weight: 600;
+    font-size: larger;
+}
+
+input {
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid var(--dark-green);
+    border-radius: 1rem;
+    font-size: 20px;
+}
+#check-button{
+    background-color: var(--secondary-color);
+    color:white;
+    /* border: 2px solid white; */
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: var(--dark-green);
+    
 }
